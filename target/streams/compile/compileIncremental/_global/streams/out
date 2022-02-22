@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 21 products, 11 sources, 1 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/directed/Arc.scala, ${BASE}/src/main/scala/undirected/SimpleGraphDefaultImpl.scala, ${BASE}/src/main/scala/directed/StrictGraphMatrixImpl.scala, ${BASE}/src/main/scala/directed/StrictGraphSuccessorsImpl.scala, ${BASE}/main.scala, ${BASE}/src/main/scala/undirected/SimpleGraphMatrixImpl.scala, ${BASE}/src/main/scala/directed/StrictGraph.scala, ${BASE}/src/main/scala/undirected/SimpleGraphNeighborsImpl.scala, ${BASE}/src/main/scala/directed/StrictGraphDefaultImpl.scala, ${BASE}/src/main/scala/undirected/SimpleGraph.scala, ${BASE}/src/main/scala/undirected/Edge.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m

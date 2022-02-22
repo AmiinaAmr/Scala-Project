@@ -1,0 +1,96 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.6.1 (Oracle Corporation Java 1.8.0_251)
+[debug] Load.defaultLoad until apply took 1684.7494ms
+[debug]                 Load.loadUnit: plugins took 802.486ms
+[debug]                 Load.loadUnit: defsScala took 0.812201ms
+[debug] [Loading] Scanning directory H:\Downloads\graph_squelette (1)\graph_squelette\project\project
+[debug]                   Load.loadUnit: mkEval took 17.2297ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in H:\Downloads\graph_squelette (1)\graph_squelette\project\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 41.0219 ms
+[info] loading settings for project graph_squelette-build-build from metals.sbt ...
+[debug]                     Load.resolveProject(graph_squelette-build-build) took 130.7248ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id graph_squelette-build-build, base: H:\Downloads\graph_squelette (1)\graph_squelette\project\project, plugins: List(<none>))) took 236.772301ms
+[debug] [Loading] Done in H:\Downloads\graph_squelette (1)\graph_squelette\project\project, returning: (graph_squelette-build-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 1032.576199ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 18.3433ms
+[debug]               Load.loadUnit(file:/H:/Downloads/graph_squelette%20(1)/graph_squelette/project/project/, ...) took 1874.3901ms
+[debug]             Load.apply: load took 2202.068099ms
+[debug]             Load.apply: resolveProjects took 12.7021ms
+[debug]             Load.apply: finalTransforms took 191.885099ms
+[debug]             Load.apply: config.delegates took 18.356ms
+[debug]             Load.apply: Def.make(settings)... took 1251.8783ms
+[debug]             Load.apply: structureIndex took 229.1021ms
+[debug]             Load.apply: mkStreams took 4.445799ms
+[info] loading project definition from H:\Downloads\graph_squelette (1)\graph_squelette\project\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]           Load.loadUnit: plugins took 5456.984199ms
+[debug]           Load.loadUnit: defsScala took 0.0032ms
+[debug] [Loading] Scanning directory H:\Downloads\graph_squelette (1)\graph_squelette\project
+[debug]             Load.loadUnit: mkEval took 0.873999ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in H:\Downloads\graph_squelette (1)\graph_squelette\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.7614 ms
+[info] loading settings for project graph_squelette-build from metals.sbt ...
+[debug]               Load.resolveProject(graph_squelette-build) took 22.7183ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id graph_squelette-build, base: H:\Downloads\graph_squelette (1)\graph_squelette\project, plugins: List(<none>))) took 25.0694ms
+[debug] [Loading] Done in H:\Downloads\graph_squelette (1)\graph_squelette\project, returning: (graph_squelette-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 58.099699ms
+[debug]           Load.loadUnit: cleanEvalClasses took 1.0928ms
+[debug]         Load.loadUnit(file:/H:/Downloads/graph_squelette%20(1)/graph_squelette/project/, ...) took 5517.593201ms
+[debug]       Load.apply: load took 5521.8522ms
+[debug]       Load.apply: resolveProjects took 0.2623ms
+[debug]       Load.apply: finalTransforms took 24.777ms
+[debug]       Load.apply: config.delegates took 0.5368ms
+[debug]       Load.apply: Def.make(settings)... took 241.2225ms
+[debug]       Load.apply: structureIndex took 32.320501ms
+[debug]       Load.apply: mkStreams took 0.0024ms
+[info] loading project definition from H:\Downloads\graph_squelette (1)\graph_squelette\project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Generated .bloop\graph_squelette-build.json
+[info] compiling 1 Scala source to H:\Downloads\graph_squelette (1)\graph_squelette\project\target\scala-2.12\sbt-1.0\classes ...
+[info] done compiling
+[success] Total time: 9 s, completed Feb 22, 2022 2:49:07 PM
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 15074.8331ms
+[debug]     Load.loadUnit: defsScala took 0.005701ms
+[debug] [Loading] Scanning directory H:\Downloads\graph_squelette (1)\graph_squelette
+[debug]       Load.loadUnit: mkEval took 0.3151ms
