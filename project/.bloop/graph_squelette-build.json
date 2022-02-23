@@ -2,16 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "graph_squelette-build",
-        "directory": "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project",
-        "workspaceDir": "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project",
+        "directory": "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project",
+        "workspaceDir": "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project",
         "sources": [
-            "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\src\\main\\scala",
-            "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\src\\main\\scala-2.12",
-            "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\src\\main\\scala-2",
-            "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\src\\main\\java",
-            "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\src\\main\\scala-sbt-1.0",
-            "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\target\\scala-2.12\\sbt-1.0\\src_managed\\main",
-            "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\main.scala"
+            "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project\\src\\main\\scala",
+            "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project\\src\\main\\scala-2.12",
+            "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project\\src\\main\\scala-2",
+            "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project\\src\\main\\java",
+            "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project\\src\\main\\scala-sbt-1.0",
+            "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project\\target\\scala-2.12\\sbt-1.0\\src_managed\\main"
         ],
         "dependencies": [
             
@@ -106,11 +105,11 @@
             "C:\\Users\\CYTech Student\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\squareup\\okio\\okio\\1.17.2\\okio-1.17.2.jar",
             "C:\\Users\\CYTech Student\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.3.3\\config-1.3.3.jar"
         ],
-        "out": "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\.bloop\\graph_squelette-build",
-        "classesDir": "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\.bloop\\graph_squelette-build\\scala-2.12\\sbt-1.0\\classes",
+        "out": "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project\\.bloop\\graph_squelette-build",
+        "classesDir": "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project\\.bloop\\graph_squelette-build\\scala-2.12\\sbt-1.0\\classes",
         "resources": [
-            "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\src\\main\\resources",
-            "H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project\\target\\scala-2.12\\sbt-1.0\\resource_managed\\main"
+            "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project\\src\\main\\resources",
+            "C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project\\target\\scala-2.12\\sbt-1.0\\resource_managed\\main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -200,9 +199,9 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "C:\\Program Files\\Java\\jdk1.8.0_251\\jre",
+                "home": "C:\\Program Files\\Java\\jre1.8.0_301",
                 "options": [
-                    "-Duser.dir=H:\\Downloads\\graph_squelette (1)\\graph_squelette\\project"
+                    "-Duser.dir=C:\\Users\\CYTech Student\\OneDrive\\Documents\\GitHub\\graph_squelette\\project"
                 ]
             },
             "mainClass": [

@@ -1,4 +1,4 @@
-[debug] [graph_squelette-build] Classpath dependencies List()
-[debug] [graph_squelette-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'graph_squelette-build' to 'H:\Downloads\graph_squelette (1)\graph_squelette\project\.bloop\graph_squelette-build.json'
-[success] Generated .bloop\graph_squelette-build.json
+[0m[[0m[0mdebug[0m] [0m[0m[graph_squelette-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[graph_squelette-build] Dependencies from configurations List()[0m
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'graph_squelette-build' to 'C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\project\.bloop\graph_squelette-build.json'[0m
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop\graph_squelette-build.json[0m
