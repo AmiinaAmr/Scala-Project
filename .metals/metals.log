@@ -129,3 +129,42 @@ Caused by: java.lang.InterruptedException
 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	... 2 more
+2022.02.23 08:56:16 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\.metals\lsp.trace.json or C:\Users\CYTech Student\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.02.23 08:56:18 INFO  logging to file C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\.metals\metals.log
+2022.02.23 08:56:18 INFO  Started: Metals version 0.11.1 in workspace 'C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette' for client Visual Studio Code 1.64.2.
+2022.02.23 08:56:18 INFO  Parse release: 1.8.0_251
+2022.02.23 08:56:21 INFO  time: initialize in 3.05s
+2022.02.23 08:56:24 INFO  Attempting to connect to the build server...
+2022.02.23 08:56:25 INFO  skipping build import with status 'Requested'
+2022.02.23 08:56:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\.metals\bsp.trace.json or C:\Users\CYTech Student\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.02.23 08:56:32 INFO  Attempting to connect to the build server...
+2022.02.23 08:56:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\project\.metals\bsp.trace.json or C:\Users\CYTech Student\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.02.23 08:56:38 INFO  time: Connected to build server in 13s
+2022.02.23 08:56:38 INFO  Connected to Build server: Bloop v1.4.12
+2022.02.23 08:56:38 INFO  time: Imported build in 0.31s
+2022.02.23 08:56:48 INFO  time: indexed workspace in 9.31s
+2022.02.23 08:58:03 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\test\scala\directed\StrictGraphDefaultImplSpec.scala
+2022.02.23 13:08:07 INFO  shutting down Metals
+2022.02.23 13:08:07 INFO  Shut down connection with build server.
+2022.02.23 13:08:07 INFO  Shut down connection with build server.
+2022.03.06 23:23:30 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\.metals\lsp.trace.json or C:\Users\CYTech Student\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.03.06 23:23:32 INFO  logging to file C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\.metals\metals.log
+2022.03.06 23:23:32 INFO  Started: Metals version 0.11.1 in workspace 'C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette' for client Visual Studio Code 1.64.2.
+2022.03.06 23:23:32 INFO  Parse release: 1.8.0_251
+2022.03.06 23:23:35 INFO  time: initialize in 2.67s
+2022.03.06 23:23:36 INFO  Attempting to connect to the build server...
+2022.03.06 23:23:36 INFO  skipping build import with status 'Requested'
+2022.03.06 23:23:39 INFO  no build target found for C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\test\scala\directed\StrictGraphDefaultImplSpec.scala. Using presentation compiler with project's scala-library version: 3.1.0
+2022.03.06 23:23:45 INFO  time: code lens generation in 9.03s
+2022.03.06 23:23:45 INFO  time: code lens generation in 9.03s
+2022.03.06 23:23:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\.metals\bsp.trace.json or C:\Users\CYTech Student\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.03.06 23:23:47 INFO  Attempting to connect to the build server...
+2022.03.06 23:23:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\project\.metals\bsp.trace.json or C:\Users\CYTech Student\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.03.06 23:23:47 INFO  time: Connected to build server in 11s
+2022.03.06 23:23:47 INFO  Connected to Build server: Bloop v1.4.12
+2022.03.06 23:23:49 INFO  time: Imported build in 0.46s
+2022.03.06 23:23:56 INFO  time: indexed workspace in 7.24s
+2022.03.06 23:23:56 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\test\scala\directed\StrictGraphDefaultImplSpec.scala
+2022.03.06 23:23:56 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\test\scala\directed\StrictGraphDefaultImplSpec.scala
+2022.03.06 23:24:20 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\test\scala\directed\StrictGraphSpec.scala
+2022.03.06 23:24:58 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\main.scala

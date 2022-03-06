@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: initialized: JsonRpcNotificationMessage(2.0, initialized, {})[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / collectAnalyses[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0manalysis location (C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\target\scala-2.13\zinc\inc_compile_2.13.zip,true)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Feb 23, 2022 8:57:04 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: textDocument/didOpen: JsonRpcNotificationMessage(2.0, textDocument/didOpen, {"textDocument":{"uri":"file:///c%3A/Users/CYTech%20Student/OneDrive/Documents/GitHub/graph_squelette/src/test/scala/directed/StrictGraphDefaultImplSpec.scala","languageId":"scala","version":1,"text":"package directed\n\nimport org.scalacheck.Gen\nimport org.scalacheck.Gen._\n\n/** The test class for [[StrictGraphDefaultImpl]] implementation */\nclass StrictGraphDefaultImplSpec extends StrictGraphSpec(StrictGraphDefaultImplSpec)\n\nobject StrictGraphDefaultImplSpec extends StrictGraphSpecCompanion[Int](\"StrictGraphDefaultImpl\") {\n    /** @inheritdoc */\n    val vertex : Gen[Int] = posNum[Int]\n\n    /** @inheritdoc */\n    def graphWithAtLeast(vertexMinCount: Int, arcMinCount: Int = 0): Gen[StrictGraphDefaultImpl[Int]] =\n      for(vertexAdditionalCount <- posNum[Int]; vertexCount <- Gen.const((vertexMinCount + vertexAdditionalCount) max 1);\n          vs <- Gen.containerOfN[Set, Int](vertexCount, vertex);\n          arcCount <- Gen.choose(arcMinCount, vertexCount * (vertexCount - 1) / 2);\n          as <- Gen.containerOfN[Set, Arc[Int]](arcCount, arcFrom(vs))) yield StrictGraphDefaultImpl(vs, as)\n  }\n"}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
