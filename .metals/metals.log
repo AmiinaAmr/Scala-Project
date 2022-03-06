@@ -168,3 +168,7 @@ Caused by: java.lang.InterruptedException
 2022.03.06 23:23:56 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\test\scala\directed\StrictGraphDefaultImplSpec.scala
 2022.03.06 23:24:20 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\test\scala\directed\StrictGraphSpec.scala
 2022.03.06 23:24:58 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\main.scala
+Mar 07, 2022 12:04:07 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 07, 2022 12:05:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 79
