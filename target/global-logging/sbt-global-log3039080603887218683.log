@@ -13,3 +13,4 @@
 [0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: textDocument/didOpen: JsonRpcNotificationMessage(2.0, textDocument/didOpen, {"textDocument":{"uri":"file:///c%3A/Users/CYTech%20Student/OneDrive/Documents/GitHub/graph_squelette/main.scala","languageId":"scala","version":1,"text":"object main extends App {\r\n    println(\"Hello World !\")\r\n}"}})[0m
 [0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
 [0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: $/setTraceNotification: JsonRpcNotificationMessage(2.0, $/setTraceNotification, {"value":"off"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: $/setTraceNotification: JsonRpcNotificationMessage(2.0, $/setTraceNotification, {"value":"off"})[0m
