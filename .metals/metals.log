@@ -7972,3 +7972,4 @@ INFO: Unsupported notification method: $/setTrace
 2022.03.07 12:55:55 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\main.scala
 2022.03.07 12:55:55 INFO  skipping build import with status 'Requested'
 2022.03.07 13:00:12 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\main.scala
+2022.03.07 13:04:06 WARN  no build target for: C:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\test\scala\directed\StrictGraphSpec.scala
