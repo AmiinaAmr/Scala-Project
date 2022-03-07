@@ -1,4 +1,5 @@
-[0m[[0m[33mwarn[0m] [0m[0mH:\Downloads\graph_squelette (1)\graph_squelette\src\main\scala\undirected\Edge.scala:27:21: abstract type V in type pattern undirected.Edge[V] is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case that : Edge[V] => that._1 == _1 && that._2 == _2 || that._1 == _2 && that._2 == _1[0m
-[0m[[0m[33mwarn[0m] [0m[0m                    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\main.scala:13:24: not enough arguments for method apply: (i: Int): Char in class StringOps.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter i.[0m
+[0m[[0m[31merror[0m] [0m[0m    println(sG.toString());[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
