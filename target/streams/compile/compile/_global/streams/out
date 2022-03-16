@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\main.scala:13:24: not enough arguments for method apply: (i: Int): Char in class StringOps.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter i.[0m
-[0m[[0m[31merror[0m] [0m[0m    println(sG.toString());[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\main\scala\undirected\SimpleGraph.scala:36:19: comparing values of types V and V using `equals` unsafely bypasses cooperative equality; use `==` instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m      if(v1.equals(v2) || neighborsOf(v1).get.contains(v2)) return true;//condition d'arret true[0m
+[0m[[0m[33mwarn[0m] [0m[0m                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

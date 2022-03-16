@@ -31,13 +31,28 @@ trait SimpleGraph[V] {
       * @param v2 other end of path to search
       * @return `true` if `v1` and `v2` are equal or if a path exists between `v1` and `v2`, `false` otherwise
       */
-    def hasPath(v1 : V, v2 : V) : Boolean = ???
+    def hasPath(v1 : V, v2 : V) : Boolean = {
+      //if(degreeOf(v1)== None || degreeOf(v2) == None) return false;
+      if(v1.equals(v2) || neighborsOf(v1).get.contains(v2)) return true;//condition d'arret true
+      return (neighborsOf(v1).get.map(v=>hasPathAux(v,v2,v1)).contains(true));
+      return false;
+    }
+
+    def hasPathAux(v : V, v2 : V,v1:V) : Boolean ={      
+      val s=neighborsOf(v).get.-(v1)
+      if(s.contains(v2)){return true;}
+      if(s.nonEmpty){return s.map(x =>hasPathAux(x,v2,v)).contains(true);}
+
+      return false;
+
+    }
 
     /** Checks if graph is connected */
-    lazy val isConnected : Boolean = ???
-
+    lazy val isConnected : Boolean = !vertices.map(v1=>vertices.-(v1).map(v2=>hasPath(v1,v2))).flatten.contains(false);
     /** Checks if graph is acyclic */
-    lazy val isAcyclic : Boolean = ???
+    lazy val isAcyclic : Boolean = !vertices.map(v1=>hasPath(v1,v1)).contains(true);
+
+
 
     /** Checks if graph is a tree */
     lazy val isTree : Boolean = isConnected && isAcyclic
@@ -96,7 +111,17 @@ trait SimpleGraph[V] {
       * @param valuation valuation used
       * @return a spanning tree whose value is minimal
       */
-    def minimumSpanningTree(valuation : Map[Edge[V], Double]) : SimpleGraph[V] = ???
+       def minimumSpanningTree(valuation : Map[Edge[V], Double]) : SimpleGraph[V] = {
+
+       val mstVertices=Set[V]()
+       val mstEdges=Set[Edge[V]]()
+       var mst=new SimpleGraphDefaultImpl[V](mstVertices,mstEdges)
+       valuation.toSeq.sortBy(_._2).foreach(x => { mst=mst.+|(x._1); if(!mst.isAcyclic) mst=mst.-|(x._1) })
+      
+      return mst
+
+
+    }
 
     /* COLORING METHODS */
 
