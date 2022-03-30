@@ -1,10 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\main\scala\undirected\SimpleGraph.scala:144:125: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : V[0m
-[0m[[0m[31merror[0m] [0m[0m required: Seq[?][0m
-[0m[[0m[31merror[0m] [0m[0m      temp.map(s=>(s,temp.indexOf(s))).map(t=>t._1.map(z=>(z,t._2))).flatten.groupBy(_._1).map(w=>w._2.head).toSeq.sortBy(_._1:_*).toMap[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\main\scala\undirected\SimpleGraph.scala:144:122: diverging implicit expansion for type Ordering[B][0m
-[0m[[0m[31merror[0m] [0m[0mstarting with method Tuple9 in object Ordering[0m
-[0m[[0m[31merror[0m] [0m[0m      temp.map(s=>(s,temp.indexOf(s))).map(t=>t._1.map(z=>(z,t._2))).flatten.groupBy(_._1).map(w=>w._2.head).toSeq.sortBy(_._1:_*).toMap[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                                         ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\main\scala\undirected\SimpleGraph.scala:37:19: comparing values of types V and V using `equals` unsafely bypasses cooperative equality; use `==` instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m      if(v1.equals(v2) || neighborsOf(v1).get.contains(v2)) return true;//condition d'arret true[0m
+[0m[[0m[33mwarn[0m] [0m[0m                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\main\scala\undirected\SimpleGraph.scala:46:15: method any2stringadd in object Predef is deprecated (since 2.13.0): Implicit injection of + is deprecated. Convert to String to call +[0m
+[0m[[0m[33mwarn[0m] [0m[0m      println(v1+"--"+v2);[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\CYTech Student\OneDrive\Documents\GitHub\graph_squelette\src\main\scala\undirected\SimpleGraph.scala:47:19: comparing values of types V and V using `equals` unsafely bypasses cooperative equality; use `==` instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m      if(v1.equals(v2) || neighborsOf(v1).get.contains(v2)) return true;[0m
+[0m[[0m[33mwarn[0m] [0m[0m                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

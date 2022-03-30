@@ -31,24 +31,23 @@ trait SimpleGraph[V] {
       * @param v2 other end of path to search
       * @return `true` if `v1` and `v2` are equal or if a path exists between `v1` and `v2`, `false` otherwise
       */
-def hasPath(v1 : V, v2 : V) : Boolean = {
-
+ def hasPath(v1 : V, v2 : V) : Boolean = {
       if(degreeOf(v1).get== 0 || degreeOf(v2).get == 0) return false;
-      if(neighborsOf(v1).get.contains(v2)) return true;//condition d'arret true
 
-      return (neighborsOf(v1).get.map(v=>hasPathAux(v,v2,v1)).contains(true));//Set(x1,x2).map(x=>f(x))=Set(f(x1),f(x2))
+      if(v1.equals(v2) || neighborsOf(v1).get.contains(v2)) return true;//condition d'arret true
+
+      return (neighborsOf(v1).get.map(v=>hasPathAux(v,v2,Set(v1)).contains(true));
 
       return false;
 
     }
 
-    def hasPathAux(v : V, v2 : V,v1:V) : Boolean ={      
+    def hasPathAux(v1 : V, v2 : V,v3:Set[V]) : Boolean ={
+      if(v1.equals(v2) || neighborsOf(v1).get.contains(v2)) return true;
 
-      val s=neighborsOf(v).get.-(v1);
+      val s=neighborsOf(v1).get.--(v3)
 
-      if(s.contains(v2)){return true;}
-
-      if(s.nonEmpty){return s.map(x =>hasPathAux(x,v2,v)).contains(true);}
+      if(s.nonEmpty){return s.map(x =>hasPathAux(x,v2,v3.+(v1)).contains(true);}
 
       return false;
 
