@@ -34,20 +34,21 @@ trait SimpleGraph[V] {
  def hasPath(v1 : V, v2 : V) : Boolean = {
       if(degreeOf(v1).get== 0 || degreeOf(v2).get == 0) return false;
 
-      if(v1.equals(v2) || neighborsOf(v1).get.contains(v2)) return true;//condition d'arret true
+      if(v1==v2 || neighborsOf(v1).get.contains(v2)) return true;//condition d'arret true
 
-      return (neighborsOf(v1).get.map(v=>hasPathAux(v,v2,Set(v1)).contains(true));
+      return (neighborsOf(v1).get.map(v=>hasPathAux(v,v2,Set(v1))).contains(true))
 
       return false;
 
     }
 
     def hasPathAux(v1 : V, v2 : V,v3:Set[V]) : Boolean ={
-      if(v1.equals(v2) || neighborsOf(v1).get.contains(v2)) return true;
+      
+      if(v1==v2 || neighborsOf(v1).get.contains(v2)) return true;
 
       val s=neighborsOf(v1).get.--(v3)
 
-      if(s.nonEmpty){return s.map(x =>hasPathAux(x,v2,v3.+(v1)).contains(true);}
+      if(s.nonEmpty){return s.map(x =>hasPathAux(x,v2,v3.+(v1))).contains(true)}
 
       return false;
 
