@@ -31,16 +31,23 @@ trait SimpleGraph[V] {
       * @param v2 other end of path to search
       * @return `true` if `v1` and `v2` are equal or if a path exists between `v1` and `v2`, `false` otherwise
       */
-    def hasPath(v1 : V, v2 : V) : Boolean = {
-      //if(degreeOf(v1)== None || degreeOf(v2) == None) return false;
-      if(v1.equals(v2) || neighborsOf(v1).get.contains(v2)) return true;//condition d'arret true
-      return (neighborsOf(v1).get.map(v=>hasPathAux(v,v2,v1)).contains(true));
+def hasPath(v1 : V, v2 : V) : Boolean = {
+
+      if(degreeOf(v1).get== 0 || degreeOf(v2).get == 0) return false;
+      if(neighborsOf(v1).get.contains(v2)) return true;//condition d'arret true
+
+      return (neighborsOf(v1).get.map(v=>hasPathAux(v,v2,v1)).contains(true));//Set(x1,x2).map(x=>f(x))=Set(f(x1),f(x2))
+
       return false;
+
     }
 
     def hasPathAux(v : V, v2 : V,v1:V) : Boolean ={      
-      val s=neighborsOf(v).get.-(v1)
+
+      val s=neighborsOf(v).get.-(v1);
+
       if(s.contains(v2)){return true;}
+
       if(s.nonEmpty){return s.map(x =>hasPathAux(x,v2,v)).contains(true);}
 
       return false;
@@ -111,25 +118,29 @@ trait SimpleGraph[V] {
       * @param valuation valuation used
       * @return a spanning tree whose value is minimal
       */
-       def minimumSpanningTree(valuation : Map[Edge[V], Double]) : SimpleGraph[V] = {
+       def minimumSpanningTree(valuation : Map[Edge[V], Double]) : SimpleGraph[V] = ???/*{
 
-       val mstVertices=Set[V]()
-       val mstEdges=Set[Edge[V]]()
-       var mst=new SimpleGraphDefaultImpl[V](mstVertices,mstEdges)
-       valuation.toSeq.sortBy(_._2).foreach(x => { mst=mst.+|(x._1); if(!mst.isAcyclic) mst=mst.-|(x._1) })
-      
-      return mst
+       if(valuation.size == 1) return this.withoutEdge.+|(valuation.head._1);
 
+       return (this.withoutEdge.+|(valuation.toSeq.sortBy(_._2).head._1))+ minimumSpanningTree(valuation.-(valuation.head))).+|());
+        // To Do : Ajouter la condition de l'acyclic
+       
+       
 
+     
     }
 
+    */
     /* COLORING METHODS */
 
     /** Sequence of vertices sorted by decreasing degree */
-    lazy val sortedVertices : Seq[V] = ???
-
+    lazy val sortedVertices : Seq[V] = vertices.map(v=>(v,degreeOf(v))).toMap.toSeq.sortWith(_._2.get>_._2.get).map(_._1).toSeq
     /** Proper coloring using greedy algorithm (a.k.a WELSH-POWELL) */
-    lazy val greedyColoring : Map[V, Int] = ???
+    lazy val greedyColoring: Map[V,Int] = {
+      val temp=sortedVertices.map(v=>(v,vertices.--(neighborsOf(v).get))).map(_._2)
+      temp.map(s=>(s,temp.indexOf(s))).map(t=>t._1.map(z=>(z,t._2))).flatten.groupBy(_._1).map(w=>w._2.head)
+    }
+        
 
     /** Proper coloring using DSATUR algorithm */
     lazy val coloringDSATUR : Map[V, Int] = ???
